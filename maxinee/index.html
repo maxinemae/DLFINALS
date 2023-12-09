@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Conversion</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <a href="login.html" class="btn btn-info" id="logoutBtn" onclick="logout()">Log Out</a>
+     <div id="title"><center>NUMBER CONVERSION</center></div>
+
+  <div class="container">
+    <div class="conversion-dropdown form-group">
+      <label class="firstoption" for="sourceConversion">Choose First Option</label>
+      <select class="form-control" id="sourceConversion">
+        <option value="binary">Choose Conversion</option>
+        <option value="binary">Binary</option>
+        <option value="octal">Octal</option>
+        <option value="decimal">Decimal</option>
+        <option value="hexadecimal">Hexadecimal</option>
+      </select>
+    </div>
+
+    <div class="conversion-dropdown form-group">
+      <label class="firstoption" for="destinationConversion">Choose Second Option:</label>
+      <select class="form-control" id="destinationConversion">
+        <option value="binary">Choose Conversion</option>
+        <option value="binary">Binary</option>
+        <option value="octal">Octal</option>
+        <option value="decimal">Decimal</option>
+        <option value="hexadecimal">Hexadecimal</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label class="firstoutput" for="numberInput">Enter number:</label>
+      <input type="text" class="form-control" id="numberInput" oninput="validateInput()">
+    </div>
+
+    <div class="input-group">
+      <label class="firstoutput" for="convertedOutput">Converted Output:</label>
+      <input type="text" class="form-control" id="convertedOutput" readonly>
+    </div>
+  </div>
+  <div class="btn-group" role="group">
+    <button class="btn btn-success" id="convertBtn" onclick="convertNumber()">Convert</button>
+    <button class="btn btn-secondary" id="clearBtn" onclick="clearFields()">Clear</button>
+  </div>
+  
+  <div id="info">
+    <center><p><strong><i>LEGEND:</strong></p></center>
+    <p><strong>Binary:</strong> Enter 0 or 1</p>
+    <p><strong>Octal:</strong> Enter 0-7</p>
+    <p><strong>Decimal:</strong> Enter any whole number</p>
+    <p><strong>Hexadecimal:</strong> Enter 0-9 or A-F</i></p>
+  </div>
+  
+
+<script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

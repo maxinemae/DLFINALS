@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    /*background-color: #f4f4f4;*/
+    background: url("https://img.freepik.com/free-vector/background-with-wavy-lines-copy-space_677411-988.jpg?w=826&t=st=1701607531~exp=1701608131~hmac=51347d200c00b50612d4182a4e3c37fbaa9b0c7e8457cd1b484629306402cba5");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
